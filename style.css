@@ -1,0 +1,44 @@
+/* globlal */
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* cabecalho */
+
+#minhaFoto{
+
+}
+
+/* sobre mim */
+#sobre{
+
+}
+
+#stacks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#stacks h3{
+margin-bottom: 12px;
+}
+
+#stacks img{
+    width: 30px;
+    height: auto;
+    padding: 10px;
+}
+/* portfolio */
+
+
+
+/* formacoes  */
+
+
+
+/* contato */
+
