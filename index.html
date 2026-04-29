@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <div id="menu">
+        <nav>
             <a href="#sobre">Sobre mim</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#formacoes">Formacoes</a>
             <a href="#contato">Contate-me</a>
-        </div>
+        </nav>
         <div id="apresentacao">
             <h1 id="titulo" class="titulos">Ola <br>Me chamo <span id="nome">Gustavo</span><br>e lhe apresento meu<br>Web-portfolio</h1>
             <img src="imagens/gustavo-fundo.png" alt="Minha foto" id="minhaFoto">
@@ -22,7 +22,7 @@
     </header>
 
     <section id="sobre">
-        <h2>Sobre mim</h2>
+        <h2 class="titulos">Sobre mim</h2>
 
         <p>Estudante de Ciência da Computação e desenvolvimento web, trabalho como auxiliar de suporte tecnico junior em uma empresa que vende sistemas ERP para empresas do pais.</p> 
         <p>Estou aprofundando minha base Full-Stack com cursos e documentações no momento, mas meu foco e maior interesse estão no Back-end.</p> 
@@ -32,6 +32,7 @@
 
         <div id="stacks"> 
             <a href="curriculo.pdf" download="Curriculo_Gustavo_Borges.pdf" id="curriculo">Baixar curriculo</a>
+
             <div id="iconeStacks">
                 <h3>Skills </h3>
                 <div id="icones">
@@ -50,17 +51,91 @@
 
     <section id="portfolio">
         <h2 class="titulos">Portfolio</h2>
-        <p></p>
+        <h3>Projetos:</h3>
+        <div id="projetos">
+            <div id="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Consultar CNPJ</h3>
+                    <p>Site local que criei para consultar CNPJ para meu trabalho.</p>
+                    <a href="https://github.com/Gusmitioco/Web-CNPJ-consult" target="_blank">Ver no Github</a>
+                </div>
+                    
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Assistencia tecnica</h3>
+                    <p>Gerenciar/marcar assistencia tecnica para empresa de celular</p>
+                    <a href="https://github.com/Gusmitioco/celular-project" target="_blank">Ver no Github</a>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>WebDev the Odin Project</h3>
+                    <p>Repositorio das ativades/projetos do curso Odin Project(em curso)</p>
+                    <a href="https://github.com/Gusmitioco/odin-recipes" target="_blank">Ver no Github</a>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Atividades CS50</h3>
+                    <p>Atividades feitas durante o curso de Ciencia da Computação</p>
+                </div>                                                              
+            </div>
+        </div>
     </section>
 
     <section id="formacoes">
         <h2 class="titulos">Formacoes</h2>
+        <div id="faculdade">
+            <h3>Curso superior/formacao</h3>
+            <p>Ciencia da Computação no Centro Universitário Internacional Uninter</p>
+            <p>3/8 periodo ⏳</p>
+        </div>
 
+        <div id="cursos">
+            <h3>Cursos</h3>
+            <ul>
+                <li>Curso de fundamentos da Web no The Odin Project</li>
+                <li>Introduction to Computer Science no CS50 de Harvard</li>
+                <li>Lógica de programação com javaScript na Alura</li>
+                <li>Imersao Dev Back-End na Alura</li>
+                <li>Algoritmo e logica de programacao com Gustavo Guanabara no Curso em video</li>
+                <li>JavaScript com Gustavo Guanabara no Curso em video (19/40 horas, em curso)</li>
+            </ul>
+        </div>
+        <div id="idiomas">
+            <h3>Idiomas</h3>
+            <p>Portugues - Brasil</p>
+            <p>Inglês - B1 (Intermediário)</p>
+            <p>Espanhol - B1 (Intermediário)</p>
+        </div>
     </section>
 
     <section id="contato">
         <h2 class="titulos">Contato</h2>
+        <p>Se procura um estagiario com visao de futuro,<br>e que pode agregar em sua empresa <span><strong>Contate-me</strong></span></p>
+        <form>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="text" name="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Motivo do contato" id="motivoContato" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
 
+        <div id="redeSociais">
+            <a href="https://github.com/Gusmitioco" target="_blank">
+                <img src="imagens/icone-github.png" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/gustavo-borges-de-melo/" target="_blank">
+                <img src="imagens/icone-linkedin.png" alt="Linkedin">
+            </a>
+        </div>
     </section>
+    <footer>
+
+    </footer>
+    <div id="modal">
+        <p>Mensagem enviada com sucesso!</p>
+        <button>Fechar</button>
+    </div>
 </body>
 </html>

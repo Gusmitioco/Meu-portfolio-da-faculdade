@@ -5,7 +5,9 @@ body {
     padding: 0;
 }
 
-
+#modal{
+    display: none;
+}
 /* cabecalho */
 
 #minhaFoto{
@@ -41,4 +43,8 @@ margin-bottom: 12px;
 
 
 /* contato */
-
+#redeSociais img{
+    width: 30px;
+    height: auto;
+    padding: 10px;
+}
