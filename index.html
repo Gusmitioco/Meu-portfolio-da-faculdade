@@ -8,19 +8,23 @@
 </head>
 <body>
     <header>
+        <!-- navbar da pagina como cada sessao -->
         <nav>
             <a href="#sobre">Sobre mim</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#formacoes">Formacoes</a>
             <a href="#contato">Contate-me</a>
         </nav>
+
+        <!-- apresentacao rapida sobre a minha pessoa com indentificacao -->
         <div id="apresentacao">
             <h1 id="titulo" class="titulos">Ola <br>Me chamo <span id="nome">Gustavo</span><br>e lhe apresento meu<br>Web-portfolio</h1>
             <img src="imagens/gustavo-fundo.png" alt="Minha foto" id="minhaFoto">
         </div>
 
     </header>
-
+    <!-- aqui separo cada sessao com IDs para classificar e estilizar cada um -->
+    <!-- comecando pela parte aonde falo mais sobre mim e mostro as stacks que estou aprendendo -->
     <section id="sobre">
         <h2 class="titulos">Sobre mim</h2>
 
@@ -30,6 +34,7 @@
         <p>Cresci rodeado de tecnologia, música e jogos e foi exatamente isso que me trouxe até aqui. A cada dia que passa me interesso mais pelo que vou me tornar no futuro.</p>
         <p>No meu tempo livre gosto de jogar alguns jogos, ver videos explicativos sobre o que anda acontecendo no mundo e me atualizar sobre assuntos de interesse pessoal.</p>
 
+        <!-- aqui a ideia e deixar uma faixa com um botao para meu curriculo e mostrando as stacks que estou estudando -->
         <div id="stacks"> 
             <a href="curriculo.pdf" download="Curriculo_Gustavo_Borges.pdf" id="curriculo">Baixar curriculo</a>
 
@@ -43,12 +48,14 @@
                     <img src="imagens/icone-python.png" alt="python">
                     <img src="imagens/icone-c.png" alt="c">
                     <img src="imagens/icone-linux.png" alt="linux">
+                    <img src="imagens/icone-node.png" alt="Node">
                 </div>
             </div>
         </div>
 
     </section>
 
+    <!-- sessao aonde mostra meus projetos, explicando cada um +- e deixando link no github -->
     <section id="portfolio">
         <h2 class="titulos">Portfolio</h2>
         <h3>Projetos:</h3>
@@ -75,6 +82,7 @@
                     <a href="https://github.com/Gusmitioco/odin-recipes" target="_blank">Ver no Github</a>
                 </div>
 
+                <!-- sem link aqui pois perdi a conta do git, mas pretendo fazer o curso novamente pois nao terminei -->
                 <div class="card">
                     <img src="" alt="">
                     <h3>Atividades CS50</h3>
@@ -84,6 +92,7 @@
         </div>
     </section>
 
+    <!-- sessao com informacoes sobre faculdade e cursos que tenho estudado e finalizado -->
     <section id="formacoes">
         <h2 class="titulos">Formacoes</h2>
         <div id="faculdade">
@@ -111,16 +120,18 @@
         </div>
     </section>
 
+    <!-- sessao para contato, com um fomulario validado em js e confirmacao de envio -->
     <section id="contato">
         <h2 class="titulos">Contato</h2>
         <p>Se procura um estagiario com visao de futuro,<br>e que pode agregar em sua empresa <span><strong>Contate-me</strong></span></p>
+        <!-- formulario para interessados -->
         <form>
             <input type="text" name="nome" placeholder="Seu nome" required>
             <input type="text" name="email" placeholder="Seu e-mail" required>
             <textarea placeholder="Motivo do contato" id="motivoContato" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-
+        <!-- links em formato de imagem para redirecionar para minhas redes profissionais -->
         <div id="redeSociais">
             <a href="https://github.com/Gusmitioco" target="_blank">
                 <img src="imagens/icone-github.png" alt="Github">
@@ -130,12 +141,19 @@
             </a>
         </div>
     </section>
+    <!-- rodape com creditos -->
     <footer>
 
     </footer>
-    <div id="modal">
+
+    <!-- modal para confirmar que foi enviado o contato ou se faltou algum campo obrigatorio, que some depois de um tempo-->
+    <div id="modal-envio">
         <p>Mensagem enviada com sucesso!</p>
-        <button>Fechar</button>
+    </div>
+
+    <!-- modal de erro -->
+    <div id="modal-erro">
+        <p>Por favor, preencha todos os campos corretamente.</p>
     </div>
 </body>
 </html>
