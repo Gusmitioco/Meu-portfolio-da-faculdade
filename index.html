@@ -23,7 +23,7 @@
 
         <!-- apresentacao rapida sobre a minha pessoa com indentificacao -->
         <div id="apresentacao">
-            <h1 id="titulo" class="titulos">Ola <br>Me chamo <span id="nome">Gustavo</span><br>e lhe apresento meu<br>Web-portfolio</h1>
+            <h1 id="titulo" class="titulos">Ola 👋<br>Me chamo <span id="nome">Gustavo</span><br>e lhe apresento meu<br>Web-portfolio</h1>
             <img src="imagens/gustavo-fundo.png" alt="Minha foto" id="minhaFoto">
         </div>
 
@@ -32,13 +32,13 @@
     <!-- comecando pela parte aonde falo mais sobre mim e mostro as stacks que estou aprendendo -->
     <section id="sobre">
         <h2 class="titulos">Sobre mim</h2>
-
-        <p>Estudante de Ciência da Computação e desenvolvimento web, trabalho como auxiliar de suporte tecnico junior em uma empresa que vende sistemas ERP para empresas do pais.</p> 
-        <p>Estou aprofundando minha base Full-Stack com cursos e documentações no momento, mas meu foco e maior interesse estão no Back-end.</p> 
-        <p>No futuro, quero me aprofundar em toda a parte do lado do servidor e pelo vasto universo da Inteligência Artificial.</p>
-        <p>Cresci rodeado de tecnologia, música e jogos e foi exatamente isso que me trouxe até aqui. A cada dia que passa me interesso mais pelo que vou me tornar no futuro.</p>
-        <p>No meu tempo livre gosto de jogar alguns jogos, ver videos explicativos sobre o que anda acontecendo no mundo e me atualizar sobre assuntos de interesse pessoal.</p>
-
+        <div id="sobreMim" >
+            <p>Estudante de Ciência da Computação e desenvolvimento web, trabalho como auxiliar de suporte tecnico junior em uma empresa que vende sistemas ERP para empresas do pais.</p> 
+            <p>Estou aprofundando minha base Full-Stack com cursos e documentações no momento, mas meu foco e maior interesse estão no Back-end.</p> 
+            <p>No futuro, quero me aprofundar em toda a parte do lado do servidor e pelo vasto universo da Inteligência Artificial, compreendendo como sao feitas e como agregam para o ser humano.</p>
+            <p>Cresci rodeado de tecnologia, música e jogos e foi exatamente isso que me trouxe até aqui. A cada dia que passa me interesso mais pelo que vou me tornar no futuro.</p>
+            <p>No meu tempo livre gosto de jogar alguns jogos, ver videos explicativos sobre o que anda acontecendo no mundo e me atualizar sobre assuntos de interesse pessoal.</p>
+        </div>
         <!-- aqui a ideia e deixar uma faixa com um botao para meu curriculo e mostrando as stacks que estou estudando -->
         <div id="stacks"> 
             <a href="curriculo.pdf" download="Curriculo_Gustavo_Borges.pdf" id="curriculo">Baixar curriculo</a>
@@ -145,12 +145,14 @@
                 <img src="imagens/icone-linkedin.png" alt="Linkedin">
             </a>
         </div>
+        <a href="#apresentacao">Inicio</a>
     </section>
     <!-- rodape com creditos e botao para voltar para o inicio-->
     <footer>
+        
         <p>© 2026 Gustavo Borges — Todos os direitos reservados</p>
         <p>Desenvolvido com HTML5, CSS3 e JavaScript</p>
-        <a href="#apresentacao">Inicio</a>
+        
     </footer>
 
     <!-- modal para confirmar que foi enviado o contato ou se faltou algum campo obrigatorio, que some depois de um tempo-->

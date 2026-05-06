@@ -7,7 +7,9 @@
 a{
     text-decoration: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     color: var(--texto-principal-d);
     background-color: var(--fundo-principal-d);
@@ -27,7 +29,6 @@ body{
     --texto-principal-l: #1a1a1a;
     --texto-secundario-d: #888888;
     --texto-secundario-l: #555555;
-    --font-titulos: 
 
 }
 #apresentacao,#sobre,#portfolio,#formacoes{
@@ -37,6 +38,17 @@ body{
 #modal-envio,#modal-erro{
     display: none;
 }
+.titulos{
+    text-align: center;
+    font-size: 50px;
+
+}
+section h2{
+    padding-top: 80px;
+}
+
+
+
 /* ----cabecalho---- */
 nav {
     position: fixed;
@@ -78,14 +90,39 @@ nav a:active{
 }
 #apresentacao{
     margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 300px ;
+}
+#titulo{
+    text-align: left;
 }
 #minhaFoto{
     
 }
+#nome {
+    color: #7c3aed;
+    text-shadow: 
+        0 0 10px #7c3aed,
+        0 0 20px #7c3aed,
+        0 0 40px #7c3aed;
+}
+
+
 
 /* ----sobre mim---- */
 #sobre{
     height: 100vh;
+
+}
+#sobreMim{
+    /* padding: 100px 300px; */
+    font-size: 21px;
+    padding-left: 280px;
+    padding-right: 280px;
+    display: flex;
+    flex-wrap: wrap
 }
 
 #stacks{
@@ -93,7 +130,6 @@ nav a:active{
     justify-content: space-between;
     width: 100%;
     background-color: var(--hover-d);
-
     padding: 10px 100px;
 }
 
@@ -103,9 +139,19 @@ nav a:active{
     padding: 10px;
 }
 #iconeStacks h3{
-    text-align: left;
-    
+    text-align: center;
+    text-shadow: 
+        0 0 20px #f1f1f1,
+        0 0 40px #f1f1f1;
 }
+
+#sobreMim p{
+    background-color: var(--cards-d-d);
+    border-radius: 20px;
+    padding: 5px 5px;
+    border: var(--cor-principal);
+}
+
 
 /* ----portfolio---- */
 
@@ -119,5 +165,12 @@ nav a:active{
 #redeSociais img{
     width: 30px;
     height: auto;
+    padding: 10px;
+}
+
+footer{
+    font-weight: 200;
+    text-align: center;
+    background-color: var(--cor-principal);
     padding: 10px;
 }
