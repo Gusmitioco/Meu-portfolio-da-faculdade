@@ -1,8 +1,10 @@
 /* ----globlal---- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
@@ -15,6 +17,9 @@ body{
     background-color: var(--fundo-principal-d);
     font-family: "Outfit", sans-serif;
 
+}
+nav a {
+    -webkit-user-drag: none;
 }
 /* variaveis setadas do projeto */
 :root{
@@ -50,6 +55,7 @@ section h2{
 
 
 /* ----cabecalho---- */
+
 nav {
     position: fixed;
     top: 12px;
@@ -112,6 +118,7 @@ nav a:active{
 
 
 /* ----sobre mim---- */
+
 #sobre{
     height: 100vh;
 
@@ -121,6 +128,8 @@ nav a:active{
     font-size: 21px;
     padding-left: 280px;
     padding-right: 280px;
+    padding-top: 60px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap
 }
@@ -129,14 +138,33 @@ nav a:active{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--hover-d);
-    padding: 10px 100px;
+    align-items: center;
+    margin-top: 100px;
+    background-color: var(--cards-d-d);
+    padding: 10px 150px;
+    box-shadow: 
+        0 0 60px #7c3aed88,
+        0 0 120px #7c3aed55;
 }
 
 #stacks img{
     width: 60px;
     height: auto;
     padding: 10px;
+}
+#curriculo{
+    
+    text-align: center;
+    color: var(--texto-principal-d);
+    background-color: var(--cor-principal);
+    width: 140px;
+    height: 50px;
+    align-items: center;
+    padding-top: 14px;
+    border-radius: 30px;
+    text-shadow: 
+        0 0 20px #f1f1f1,
+        0 0 40px #f1f1f1;
 }
 #iconeStacks h3{
     text-align: center;
@@ -150,13 +178,73 @@ nav a:active{
     border-radius: 20px;
     padding: 5px 5px;
     border: var(--cor-principal);
+    border-left: 3px solid #7c3aed;
+    padding-left: 14px;
+    margin-bottom: 16px;
 }
 
 
 /* ----portfolio---- */
 
+#projects{
+    border-left: 3px solid #7c3aed;
+    padding-left: 14px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 
+}
+#projetos{
+    padding-inline: 300px;
 
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.card h3,p{
+    margin-block: 4px;
+}
+
+.card{
+    padding: 30px 30px;
+    border: 1px solid #2a2a2a;
+    border-radius: 40px;
+    background-color: var(--cards-d-d);
+    overflow: hidden;
+    transition: border 0.3s;
+}
+.card:hover{
+    border: 1px solid #7c3aed;
+}
+.tag{
+
+    border-radius: 999px;
+    background:#7c3aed22;
+    color: #7c3aed;
+    border: 1px solid #7c3aed;
+    padding-inline: 5px;
+}
+.card-tags{
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.card a{
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: var(--cor-principal);
+    color: var(--texto-principal-d);
+}
+.card a:visited{
+    text-decoration: none;
+}
+.card a:hover{
+    border: 1px solid #f1f1f1;
+}
 /* ----formacoes----  */
 
 
