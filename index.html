@@ -24,7 +24,7 @@
         <!-- apresentacao rapida sobre a minha pessoa com indentificacao -->
         <div id="apresentacao">
             <h1 id="titulo" class="titulos">Ola 👋<br>Me chamo <span id="nome">Gustavo</span><br>e lhe apresento meu<br>Web-portfolio</h1>
-            <img src="imagens/gustavo-fundo.png" alt="Minha foto" id="minhaFoto">
+            <img src="imagens/gustavo-foto.png" alt="Minha foto" id="minhaFoto">
         </div>
 
     </header>
@@ -54,6 +54,8 @@
                     <img src="imagens/icone-c.png" alt="c">
                     <img src="imagens/icone-linux.png" alt="linux">
                     <img src="imagens/icone-node.png" alt="Node">
+                    <img src="imagens/icone-next.png" alt="Next">
+                    <img src="imagens/icone-react.png" alt="React">
                 </div>
             </div>
         </div>
@@ -200,27 +202,42 @@
 </section>
 
     <!-- sessao para contato, com um fomulario validado em js e confirmacao de envio -->
-    <section id="contato">
-        <h2 class="titulos">Contato</h2>
-        <p>Se procura um estagiario com visao de futuro,<br>e que pode agregar em sua empresa <span><strong>Contate-me</strong></span></p>
-        <!-- formulario para interessados -->
-        <form>
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="text" name="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Motivo do contato" id="motivoContato" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <!-- links em formato de imagem para redirecionar para minhas redes profissionais -->
-        <div id="redeSociais">
-            <a href="https://github.com/Gusmitioco" target="_blank">
-                <img src="imagens/icone-github.png" alt="Github">
-            </a>
-            <a href="https://www.linkedin.com/in/gustavo-borges-de-melo/" target="_blank">
-                <img src="imagens/icone-linkedin.png" alt="Linkedin">
-            </a>
+<section id="contato">
+    <h2 class="titulos">Contato</h2>
+    <div id="contato-grid">
+
+        <!-- lado esquerdo -->
+        <div id="contato-esquerda">
+            <div id="texto-contato">
+                <h2>Aberto a <span>oportunidades</span> e colaborações</h2>
+                <p>Se procura um estagiário com visão de futuro e que pode agregar em sua empresa, <strong>contate-me!</strong></p>
+            </div>
+            <div id="redeSociais">
+                <a href="https://github.com/Gusmitioco" target="_blank" class="link-redes">
+                    <img src="imagens/icone-github.png" alt="Github">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-borges-de-melo/" target="_blank" class="link-redes">
+                    <img src="imagens/icone-linkedin.png" alt="Linkedin">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <a href="#apresentacao">Voltar ao início</a>
         </div>
-        <a href="#apresentacao">Inicio</a>
-    </section>
+
+        <!-- lado direito -->
+        <div id="contato-direita">
+            <form>
+                <h3>Entre em contato</h3>
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Motivo do contato" id="motivoContato" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</section>
     <!-- rodape com creditos e botao para voltar para o inicio-->
     <footer>
         
