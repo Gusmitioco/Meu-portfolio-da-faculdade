@@ -67,7 +67,7 @@
         <div id="projetos">
             <div id="cards">
                 <div class="card">
-                    <img src="" alt="Consultar CNPJ">
+                    <img src="imagens/cnpj-print.png" alt="Consultar CNPJ">
                     <h3>Consultar CNPJ</h3>
                     <p>Site local que criei para consultar CNPJ para meu trabalho.</p>
                     <div class="card-tags">
@@ -81,7 +81,7 @@
                 </div>
                     
                 <div class="card">
-                    <img src="" alt="Assistencia-tec">
+                    <img src="imagens/consert-print.png" alt="Assistencia-tec">
                     <h3>Assistencia tecnica</h3>
                     <p>Gerenciar/marcar assistencia tecnica para empresa de celular</p>
                     <div class="card-tags">
@@ -95,7 +95,10 @@
                 </div>
 
                 <div class="card">
-                    <img src="" alt="Odin-Projects">
+                    <div id="odin">
+                        <span>Odin Project</span>
+                        <small class="badge">Repositorio de ativades/em curso</small>
+                    </div>
                     <h3>WebDev the Odin Project</h3>
                     <p>Repositorio das ativades/projetos do curso Odin Project(em curso)</p>
                     <div class="card-tags">
@@ -108,7 +111,7 @@
 
                 <!-- sem link aqui pois perdi a conta do git, mas pretendo fazer o curso novamente pois nao terminei -->
                 <div class="card">
-                    <img src="" alt="Viannaarts">
+                    <img src="imagens/vianna-print.png" alt="Viannaarts">
                     <h3>Portfolio empresarial - Projeto Freelance</h3>
                     <p>Portfolio que fiz para um empresa de terceiros</p>
                     <div class="card-tags">
@@ -126,32 +129,75 @@
     </section>
 
     <!-- sessao com informacoes sobre faculdade e cursos que tenho estudado e finalizado -->
-    <section id="formacoes">
-        <h2 class="titulos">Formacoes</h2>
-        <div id="faculdade">
-            <h3>Curso superior/formacao</h3>
-            <p>Ciencia da Computação no Centro Universitário Internacional Uninter</p>
-            <p>3/8 periodo ⏳</p>
+<section id="formacoes">
+    <h2 class="titulos">Formações</h2>
+
+    <div id="formacoes-grid">
+
+        <!-- coluna esquerda -->
+        <div id="formacoes-esquerda">
+
+            <div id="faculdade">
+                <h3>Graduação</h3>
+                <p>Ciência da Computação</p>
+                <p class="univ-sub">Uninter</p>
+                <div class="barra">
+                    <div class="barra-concluida"></div>
+                </div>
+                <p class="periodo">3º de 8 períodos</p>
+            </div>
+
+            <div id="idiomas">
+                <h3>Idiomas</h3>
+                <div class="linguagem">
+                    <span>Português</span>
+                    <span class="badge-linguagem">Nativo</span>
+                </div>
+                <div class="linguagem">
+                    <span>Inglês</span>
+                    <span class="badge-linguagem">B1</span>
+                </div>
+                <div class="linguagem">
+                    <span>Espanhol</span>
+                    <span class="badge-linguagem">B1</span>
+                </div>
+            </div>
+
         </div>
 
+        <!-- coluna direita -->
         <div id="cursos">
             <h3>Cursos</h3>
-            <ul>
-                <li>Curso de fundamentos da Web no The Odin Project</li>
-                <li>Introduction to Computer Science no CS50 de Harvard</li>
-                <li>Lógica de programação com javaScript na Alura</li>
-                <li>Imersao Dev Back-End na Alura</li>
-                <li>Algoritmo e logica de programacao com Gustavo Guanabara no Curso em video</li>
-                <li>JavaScript com Gustavo Guanabara no Curso em video (19/40 horas, em curso)</li>
-            </ul>
+            <div class="lista">
+                <div class="cursos">
+                    <p class="t-name">The Odin Project</p>
+                    <p class="plataforma">Web Foundations</p>
+                </div>
+                <div class="cursos">
+                    <p class="id-curso">CS50 — Harvard</p>
+                    <p class="plataforma">Ciência da Computação</p>
+                </div>
+                <div class="cursos">
+                    <p class="id-curso">Lógica de Programação com JavaScript</p>
+                    <p class="plataforma">Alura</p>
+                </div>
+                <div class="cursos">
+                    <p class="id-curso">Imersão Dev Back-End</p>
+                    <p class="plataforma">Alura</p>
+                </div>
+                <div class="cursos">
+                    <p class="id-curso">Algoritmos e Lógica — Guanabara</p>
+                    <p class="plataforma">Curso em Vídeo</p>
+                </div>
+                <div class="cursos">
+                    <p class="id-curso">JavaScript — Guanabara ⏳</p>
+                    <p class="plataforma">Curso em Vídeo — em curso</p>
+                </div>
+            </div>
         </div>
-        <div id="idiomas">
-            <h3>Idiomas</h3>
-            <p>Portugues - Brasil</p>
-            <p>Inglês - B1 (Intermediário)</p>
-            <p>Espanhol - B1 (Intermediário)</p>
-        </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- sessao para contato, com um fomulario validado em js e confirmacao de envio -->
     <section id="contato">

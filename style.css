@@ -36,7 +36,7 @@ nav a {
     --texto-secundario-l: #555555;
 
 }
-#apresentacao,#sobre,#portfolio,#formacoes{
+#apresentacao,#sobre{
     height: 100vh;
 }
 
@@ -119,6 +119,8 @@ nav a:active{
 
 /* ----sobre mim---- */
 
+
+
 #sobre{
     height: 100vh;
 
@@ -184,7 +186,10 @@ nav a:active{
 }
 
 
+
 /* ----portfolio---- */
+
+
 
 #projects{
     border-left: 3px solid #7c3aed;
@@ -245,7 +250,144 @@ nav a:active{
 .card a:hover{
     border: 1px solid #f1f1f1;
 }
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    border: 2px solid #5b21b6;
+}
+#odin{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    background-image: repeating-linear-gradient(
+        0deg, #7c3aed22 0px, #7c3aed22 1px, transparent 1px, transparent 20px
+    ),
+    repeating-linear-gradient(
+        90deg, #7c3aed22 0px, #7c3aed22 1px, transparent 1px, transparent 20px
+    );
+    background-color: #0f0f0f;
+    border-radius: 40px;
+    border: 2px solid #5b21b6;
+}
+#odin span{
+
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.badge {
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #7c3aed22;
+    color: #7c3aed;
+    border: 1px solid #7c3aed44;
+    position: relative;
+}
+
+
+
 /* ----formacoes----  */
+
+
+#formacoes-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    padding: 200px 300px;
+}
+#formacoes-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#faculdade, #idiomas{
+    background-color: var(--cards-d-d);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #5b21b6;
+}
+
+/* barra de progresso */
+.barra {
+    background: #2a2a2a;
+    border-radius: 999px;
+    height: 6px;
+    margin: 10px 0 4px;
+}
+.barra-concluida{
+    background: var(--cor-principal);
+    border-radius: 999px;
+    height: 6px;
+    width: 37.5%;
+}
+.periodo{
+    font-size: 11px;
+    color: var(--texto-secundario-d);
+}
+
+/* idiomas */
+.linguagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+.badge-linguagem{
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #7c3aed22;
+    color: var(--cor-principal);
+    border: 1px solid #7c3aed44;
+}
+
+/* timeline */
+#cursos{
+    background-color: var(--cards-d-d);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #5b21b6;
+}
+.lista{
+    border-left: 2px solid #2a2a2a;
+    padding-left: 16px;
+    margin-top: 12px;
+}
+.cursos{
+    position: relative;
+    padding-bottom: 16px;
+}
+.cursos:last-child{
+    padding-bottom: 0;
+}
+.cursos::before{
+    content: '';
+    position: absolute;
+    left: -21px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cor-principal);
+}
+.id-curso{
+    font-size: 13px;
+    color: var(--texto-principal-d);
+}
+.plataforma{
+    font-size: 11px;
+    color: var(--texto-secundario-d);
+}
 
 
 
