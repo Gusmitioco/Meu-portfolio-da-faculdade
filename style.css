@@ -502,6 +502,42 @@ form button:hover {
     width: 20px;
     height: 20px;
 }
+#voltar-inicio{
+    text-decoration: none;
+    margin-top: 25px;
+    display: flex;
+    border: 2px solid #555555;
+    width: 24%;
+    padding: 17px 17px;
+    border-radius: 20px;
+    color: var(--texto-principal-d);
+}
+#voltar-inicio:hover{
+    border: 2px solid #5b21b6;
+
+}
+#modal-envio {
+    position: fixed;
+    bottom: 32px;   
+    right: 32px;    
+    background-color: var(--cards-d-d);
+    color: var(--texto-principal-d);
+    padding: 16px 24px;
+    border-radius: 12px;
+    border-left: 4px solid #7c3aed;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+#modal-erro {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background-color: var(--cards-d-d);
+    color: var(--texto-principal-d);
+    padding: 16px 24px;
+    border-radius: 12px;
+    border-left: 4px solid #ef4444;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
 footer{
     font-weight: 200;
     text-align: center;

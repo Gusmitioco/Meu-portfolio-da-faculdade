@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -62,7 +63,7 @@
 
     </section>
 
-    <!-- sessao aonde mostra meus projetos, explicando cada um +- e deixando link no github -->
+    <!-- sessao aonde mostra meus projetos, explicando cada um +-, mostrando as stacks usadas e deixando link no github -->
     <section id="portfolio">
         <h2 class="titulos">Portfólio</h2>
         <h3 id="projects">Projetos:</h3>
@@ -111,7 +112,6 @@
                     <a href="https://github.com/Gusmitioco/odin-recipes" target="_blank">Ver no GitHub</a>
                 </div>
 
-                <!-- sem link aqui pois perdi a conta do git, mas pretendo fazer o curso novamente pois nao terminei -->
                 <div class="card">
                     <img src="imagens/vianna-print.png" alt="Viannaarts">
                     <h3>Portfólio empresarial — Projeto Freelance</h3>
@@ -219,19 +219,19 @@
                     </a>
                     <a href="https://www.linkedin.com/in/gustavo-borges-de-melo/" target="_blank" class="link-redes">
                         <img src="imagens/icone-linkedin.png" alt="Linkedin">
-                        <span>LinkedIn</span>
+                        <span>Linkedin</span>
                     </a>
                 </div>
-                <a href="#apresentacao">Voltar ao início</a>
+                <a href="#apresentacao" id="voltar-inicio">Voltar ao início</a>
             </div>
 
             <!-- lado direito -->
             <div id="contato-direita">
                 <form>
                     <h3>Entre em contato</h3>
-                    <input type="text" name="nome" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu e-mail" required>
-                    <textarea placeholder="Motivo do contato" id="motivoContato" required></textarea>
+                    <input type="text" name="nome" id="nome-form" placeholder="Seu nome" required>
+                    <input type="email" name="email" id="email-form" placeholder="Seu e-mail" required>
+                    <textarea placeholder="Motivo do contato" id="motivo-contato" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -254,5 +254,6 @@
     <div id="modal-erro">
         <p>Por favor, preencha todos os campos corretamente.</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
