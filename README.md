@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido como atividade prática da disciplina de Fundame
 
 ##  Acesso
 
-- **Site:** [Link do Github Pages](adicionar link do GitHub Pages quando estiver pronto)
+- **Site:** [Link do Github Pages](https://gusmitioco.github.io/portfolio-gustavo-borges/)
 - **Repositório:** [Link do repositorio](https://github.com/Gusmitioco/Meu-portfolio-da-faculdade)
 
 ##  Sobre o Projeto
@@ -31,7 +31,9 @@ Single page website com navegação por âncoras, apresentando informações pes
 ├── index.html
 ├── style.css
 └── imagens/
-    ├── gustavo-fundo.png
+    ├── gustavo-foto.png
+    ├── vianna-print.png
+    ├── cnpj-print.png
     ├── icone-html.png
     ├── icone-css.png
     ├── icone-js.png
@@ -40,10 +42,13 @@ Single page website com navegação por âncoras, apresentando informações pes
     ├── icone-linux.png
     ├── icone-data.png
     ├── icone-github.png
+    ├── icone-react.png
+    ├── icone-next.png
     └── icone-linkedin.png
+
 ```
 
-## 👨 Autor
+## Autor
 
 **Gustavo Borges** — Estudante de Ciência da Computação com foco em Back-end, dados e inteligencia artificial.
 
